@@ -1,0 +1,327 @@
+                    /*  Google Fonts   */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  transition:all 1.5s ease;
+  justify-content: center;
+  align-items: center;
+
+}
+p{
+  line-height:150%;
+  margin-bottom:2em;
+}
+.fix{
+  overflow: hidden;
+}
+.container_full{
+  width:100%;
+}
+.container{
+  width: 980px;
+  display: block;
+  margin: 0 auto;
+}
+
+                /* header-part */
+.hbgc{
+    background:white;
+}
+.left_header h1{
+  font-size:50px;
+  font-family:Courier;
+  font-weight:bold;
+}
+.left_header p{
+     font-size:30px;
+    font-family:Ink Free ;
+    font-weight:bold obligue;
+}
+.left_header{
+  float: left;
+}
+#header img{
+  height:115px ;
+  width:115px;
+}
+
+                /* menu-part */
+#header nav{
+  float: right;
+  font-family:Terminal;
+}
+ #menu{
+ list-style: none;
+}
+ #menu ul{
+
+}
+ #menu  li{
+  float: left;
+
+}
+ #menu  li a{
+ display: block;
+ color: black;
+ font-weight: bold;
+ font-size:25px;
+ padding:15px;
+ text-decoration: none;
+font-family: 'Roboto', sans-serif;
+}
+
+ #menu  li a:hover{
+ color:green;
+ text-decoration: underline;
+}
+
+            /* parallax-part */
+.parallax {
+  /* The image used */
+  background-image: url("img/3.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax h1{
+  padding-top:100px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: underline;
+  background-color: white;
+  color:white;
+  font-size:200px;
+  font-weight: 700;
+  background: linear-gradient(
+    -80deg,
+    transparent 5%,
+    transparent 5%,
+    rgba(0,0,0,0.5) 100%,
+    rgba(0,0,0,0.5) 100%,
+    transparent 100%,
+    transparent 100%
+    );
+ background-size: 300% 300%;
+ transition: 1.5s;
+  ;
+}
+.parallax h1:hover{
+     background-position:-120% 0;
+}
+.p1 p{
+  font-size:25px;
+  font-family: 'Fondamento', cursive;
+  margin-top:20px;
+}
+.box{
+    position: relative;
+    width: 900px;
+    height:250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    background:#060c21;
+    margin-top:50px;
+}
+.box:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index:-1;
+}
+.box:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index:-2;
+  filter: blur(40px);
+}
+.box:before,
+.box:after{
+  background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+}
+.content{
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.flex{
+  font-family:Courier;
+  font-weight:bold;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  color:yellow;
+}
+.nivo_wrap{
+  margin-top:40px;
+}
+.sldr_hdr{
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+}
+.hdin{
+      text-align: center;
+      font-size:70px;
+      color: ;
+      font-family: 'Montserrat Subrayada', sans-serif;
+}
+.control{
+  width: 1280px;
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.control .boxs{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background:#ff0;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.control .boxs .imgebox{
+  position: relative;
+  overflow: hidden;
+}
+.control .boxs .imgebox img{
+  max-width: 100%;
+  transition: transform 2s;
+}
+.control .boxs:hover .imgebox img{
+transform: scale(1.2);
+}
+.control .boxs .information{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+.control .boxs:hover .information{
+  transform: scaleY(1);
+}
+.control .boxs .information .racoon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+.control .boxs .information .racoon h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #ff0;
+}
+.control .boxs .information .racoon p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+.young{
+  margin-top: 250px;
+  font-size: 50px;
+  text-align:center;
+  font-family: 'Special Elite', cursive;
+  margin-bottom: 10px;
+  color: #63B563;
+  text-decoration: underline;
+}
+.video{
+  padding: 15px;
+  line-height: 2em;
+}
+.Follow{
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  color: #FB000C;
+  margin-top: 10px;
+}
+.intro{
+  text-align: center;
+  font-family: 'Ranchers', cursive;
+  font-size: 30px;
+}
+.listed ul{
+  margin:0 auto;
+  margin-left:300px;
+  list-style-type: none;
+}
+.listed ul li{
+  float: left;
+  padding: 5px;
+ 
+}
+.listed ul li img{ 
+  height: 80px;
+  width: 80px;
+}
+.footer-wrapper{
+ 
+ margin: 0 auto;
+}
+.single-footer{
+ width: 33%;
+ float: left;
+ text-align: left;
+ color: black;
+}
+.single-footer ul{
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+.single-footer ul a{
+ text-transform: uppercase;
+ text-decoration: none;
+ color: black;
+ font-size: 20px;
+}
+.single-footer p{
+ width: 70%;
+ font-size:15px; 
+}
+footer{
+ width: 100%
+ height:250px;
+ background-color: black;
+}
+.fps{
+ font-size:15px; 
+}
